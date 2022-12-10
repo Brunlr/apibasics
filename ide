@@ -1,0 +1,10 @@
+import requests
+link = 'https://main.brunlr.repl.co/pegarvendas'
+requisicao = requests.get(link)
+
+print(requisicao)
+print(requisicao.json())
+
+dicionario = requisicao.json()
+
+print(dicionario['Total_vendas'])
